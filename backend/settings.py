@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 from decouple import config
-print("SECRET KEY VALUE:", config("SECRET_KEY"))
+
 SECRET_KEY = config("SECRET_KEY")
 
 
@@ -142,7 +142,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+    "http://localhost:5174",
     "https://task-mang-frontend-six.vercel.app",
 
 ]
