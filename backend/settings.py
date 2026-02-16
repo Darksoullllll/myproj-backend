@@ -146,6 +146,8 @@ CORS_ALLOWED_ORIGINS = [
 
 ]
 
+CORS_ALLOW_CREDENTIALS = True
+
 CSRF_TRUSTED_ORIGINS = [
     "https://task-mang-frontend-six.vercel.app",
 ]
@@ -159,7 +161,3 @@ ALLOWED_HOSTS = ['*']  # temporarily for deployment
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-CSRF_TRUSTED_ORIGINS = [
-    "https://your-render-url.onrender.com",
-]
